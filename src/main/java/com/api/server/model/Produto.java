@@ -7,6 +7,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 public class Produto {
 	@Id
@@ -19,6 +21,7 @@ public class Produto {
 	
 	@ManyToOne
 	@JoinColumn(name="estabelecimento_id")
+	@JsonIgnore
 	private Estabelecimento estabelecimento;
 	
 	public Produto(Long id, String nome, String descricao, String fotoURL, double preco) {

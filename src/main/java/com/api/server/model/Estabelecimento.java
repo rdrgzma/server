@@ -12,8 +12,7 @@ public class Estabelecimento {
 	private Long id;
 	private String nome;
 	private String fotoURL;
-	
-	
+		
 	public Estabelecimento(Long id, String nome, String fotoURL) {
 		super();
 		this.id = id;
@@ -49,10 +48,4 @@ public class Estabelecimento {
 	public void setFotoURL(String fotoURL) {
 		this.fotoURL = fotoURL;
 	}
-
-
-	
-	
-	
-
 }
